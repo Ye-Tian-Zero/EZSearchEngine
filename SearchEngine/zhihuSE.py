@@ -40,7 +40,7 @@ print 'saving lexicon'
 lexicon.buildLexicon(index_DB_path)
 
 print 'lexicon saved'
-  
+print 'over'
 
 
 
