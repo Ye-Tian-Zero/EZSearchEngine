@@ -41,7 +41,8 @@ class searchEngine:
         query_list = list(seg_text)
         
         query_list = [i for i in query_list if i != ' ']
-        
+        if len(query_list) == 0:
+            return
         #print query_list
         
         title_hits_cnt = {}
@@ -67,8 +68,6 @@ class searchEngine:
 if __name__ == '__main__':
     se = searchEngine()
     while(True):
-        query = raw_input('please: ')
+        query = raw_input('EZsearch: ')
+        print
         se.search(query)
-    
-    
-    se.search()
